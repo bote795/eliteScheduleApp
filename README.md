@@ -11,3 +11,7 @@ uses:
 * http requests
 * services
 * ui-router
+
+![gif](https://raw.githubusercontent.com/bote795/eliteScheduleApp/master/gifs/example.gif)
+
+GIF created with [LiceCap](http://www.cockos.com/licecap/).
