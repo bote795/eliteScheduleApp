@@ -1,0 +1,60 @@
+<ion-view title="Standings" ng-controller="StandingsCtrl as vm">
+	<ion-content class="has-header">
+		<div class="list">
+			<div ng-repeat="divison in vm.standings">
+				<div class="item item-divider item-energized">
+					{{divison.divisionName}}
+				</div>
+				<a class="item item-icon-right" ng-repeat="team in divison.divisionStandings" href="#/app/teams/{{team.id}}">
+					
+					<div class="row">
+						<div class="col">
+							<h2 class="positive">{{team.id}}{{team.teamName}}</h2 >
+						</div>
+					</div>
+					<div class="row">
+						<div class="col">
+							<h4>wins</h4>
+						</div>
+						<div class="col">
+							<h4>Losses</h4>
+						</div>
+						<div class="col">
+							<h4>h4ct</h4>
+						</div>
+						<div class="col">
+							<h4>h4F</h4>
+						</div>
+						<div class="col">
+							<h4>h4A</h4>
+						</div>
+						<div class="col">
+							<h4>Diff</h4>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col">
+							<h5>{{team.wins}}</h5>
+						</div>
+						<div class="col">
+							<h5>{{team.losses}}</h5>
+						</div>
+						<div class="col">
+							<h5>{{team.winningh5ct}}</h5>
+						</div>
+						<div class="col">
+							<h5>{{team.hpointsFor}}</h5>
+						</div>
+						<div class="col">
+							<h5>{{team.hpointsAgainst}}</h5>
+						</div>
+						<div class="col">
+							<h5>{{team.hpointsDiff}}</h5>
+						</div>
+					</div>
+					<i class="icon ion-chevron-right icon-accessory"></i>
+				</a>
+			</div>
+		</div>
+	</ion-content>
+</ion-view>
